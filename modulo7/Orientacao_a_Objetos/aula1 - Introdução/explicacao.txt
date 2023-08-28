@@ -1,0 +1,15 @@
+ORIENTACAO A OBJETOS NO PHP OU OOP
+
+    define();
+    $variavel
+    func();
+
+    Pessoa
+    {
+        nome 
+        idade
+        Pessoa
+        
+        crescer()
+        comer()
+    }
