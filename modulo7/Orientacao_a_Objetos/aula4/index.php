@@ -14,6 +14,15 @@
         public static function outroMetodoEstatico(){
             echo 'Meu outro método';
         }
+
+        public static function fazeragachamento(){
+            echo 'Fazendo agachamento';
+            echo '<hr />';
+            $principal2 = new Principal;
+            $principal2->func2();
+        }
+
+        
     }
 
     class Principal extends teste{
@@ -29,7 +38,12 @@
             self::metodoestatico();
             echo '<hr />';
             Principal2::outroMetodoEstatico();
+            echo '<hr />';
+            Principal2::fazeragachamento();
         }
+
+        
+
     }
 
     //$principal = new Principal;
