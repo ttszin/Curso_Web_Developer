@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="estilo/fontawesome/css/all.css" rel="stylesheet"><!--Adicionando o font awesome-->
 </head>
 <body>
     <header>
@@ -69,8 +70,28 @@
         <h2 class="title">Especialidades</h2>
         <div class="center">
             <div class="box-epecialidade">
-                <h3>icone1</h3>
+                <h3><i class="fa-brands fa-css3"></i></h3>
                 <h3>CSS3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae augue velit. Sed urna massa, fringilla et est sed, dignissim semper nulla. Pellentesque habitan
+                    t morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras sapien massa, pulvinar vel convallis commodo, tincidunt posuere dui. Ut at elit condimentum, 
+                    consectetur dolor at, ullamcorper purus. Praesent sit amet lorem commodo, pharetra arcu at, posuere lectus. Integer dignissim mollis odio, eu laoreet erat imperdiet in. Nunc
+                    sed eleifend turpis. Pellentesque orci augue, pretium ac mi dignissim, ultrices rutrum dolor. Sed ut massa sapien. Phasellus ultricies ullamcorper ultrices. Interdum et male
+                    suada fames ac ante ipsum primis in faucibus. Aenean purus nulla, efficitur vel ipsum in, iaculis mattis risus. Quisque pharetra lorem sodales pretium iaculis. Mauris magna es
+                    t, ultrices at pellentesque et, ultricies ullamcorper neque.</p>
+            </div>
+            <div class="box-epecialidade">
+                <h3><i class="fa-brands fa-html5"></i></h3>
+                <h3>HTML5</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae augue velit. Sed urna massa, fringilla et est sed, dignissim semper nulla. Pellentesque habitan
+                    t morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras sapien massa, pulvinar vel convallis commodo, tincidunt posuere dui. Ut at elit condimentum, 
+                    consectetur dolor at, ullamcorper purus. Praesent sit amet lorem commodo, pharetra arcu at, posuere lectus. Integer dignissim mollis odio, eu laoreet erat imperdiet in. Nunc
+                    sed eleifend turpis. Pellentesque orci augue, pretium ac mi dignissim, ultrices rutrum dolor. Sed ut massa sapien. Phasellus ultricies ullamcorper ultrices. Interdum et male
+                    suada fames ac ante ipsum primis in faucibus. Aenean purus nulla, efficitur vel ipsum in, iaculis mattis risus. Quisque pharetra lorem sodales pretium iaculis. Mauris magna es
+                    t, ultrices at pellentesque et, ultricies ullamcorper neque.</p>
+            </div>
+            <div class="box-epecialidade">
+                <h3><i class="fa-brands fa-node-js"></i></h3>
+                <h3>JavaScript</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae augue velit. Sed urna massa, fringilla et est sed, dignissim semper nulla. Pellentesque habitan
                     t morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras sapien massa, pulvinar vel convallis commodo, tincidunt posuere dui. Ut at elit condimentum, 
                     consectetur dolor at, ullamcorper purus. Praesent sit amet lorem commodo, pharetra arcu at, posuere lectus. Integer dignissim mollis odio, eu laoreet erat imperdiet in. Nunc
