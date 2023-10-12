@@ -7,6 +7,10 @@
 
 /**Boot CSS**/
 
+img{
+    width: 100%;
+}
+
 .center{
     max-width: 1280px;
     padding: 0 2%;
@@ -15,6 +19,7 @@
 
 .w50{
     width: 50%;
+    padding: 0 10px;
 }
 
 .clear{
@@ -133,5 +138,60 @@ section.banner-principal form input[type=submit]{
     font-size: 22px;
     padding-left: 10px;
     margin-top: 10px;
+}
+
+section.descricao-autor{
+    padding: 30px 0;
+}
+
+section.descricao-autor h2{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+section.descricao-autor p{
+    text-align: justify;
+    font-size: 16px;
+    color: #444;
+    margin-top: 20px;
+}
+
+@media screen and (max-width:700px){
+    nav.desktop{
+        display: none;
+    }
+
+    nav.mobile{
+        display: block;
+        cursor: pointer;
+        color: white;
+    }
+
+    .botao-menu-mobile{
+        font-size: 24px;
+    }
+
+    nav.mobile ul{
+        top: 75px;
+        z-index: 3;
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 0;
+
+    }
+}
+
+@media screen and (max-width: 768px){
+    img{
+        float: none !important;
+        display: block;
+        margin: 0 auto;
+        max-width: 500px;
+    }
+    .w50{
+        padding: 20px;
+        width: 100%;
+    }
 }
 

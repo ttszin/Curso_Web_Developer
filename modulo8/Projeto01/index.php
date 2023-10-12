@@ -26,6 +26,9 @@
             </ul>
         </nav>
         <nav class="mobile right">
+            <div class="botao-menu-mobile">
+                <i class="fa-solid fa-bars"></i>
+            </div>
             <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">Sobre</a></li>
@@ -48,7 +51,7 @@
         </div><!--center-->
     </section><!--banerprincipal-->
 
-    <section class="decricao-autor">
+    <section class="descricao-autor">
         <div class="center">
         <div class="w50 left">
             <h2>Matheus T. Souza</h2>
@@ -60,10 +63,18 @@
             suada fames ac ante ipsum primis in faucibus. Aenean purus nulla, efficitur vel ipsum in, iaculis mattis risus. Quisque pharetra lorem sodales pretium iaculis. Mauris magna es
             t, ultrices at pellentesque et, ultricies ullamcorper neque.
             </p>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae augue velit. Sed urna massa, fringilla et est sed, dignissim semper nulla. Pellentesque habitan
+            t morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras sapien massa, pulvinar vel convallis commodo, tincidunt posuere dui. Ut at elit condimentum, 
+            consectetur dolor at, ullamcorper purus. Praesent sit amet lorem commodo, pharetra arcu at, posuere lectus. Integer dignissim mollis odio, eu laoreet erat imperdiet in. Nunc
+            sed eleifend turpis. Pellentesque orci augue, pretium ac mi dignissim, ultrices rutrum dolor. Sed ut massa sapien. Phasellus ultricies ullamcorper ultrices. Interdum et male
+            suada fames ac ante ipsum primis in faucibus. Aenean purus nulla, efficitur vel ipsum in, iaculis mattis risus. Quisque pharetra lorem sodales pretium iaculis. Mauris magna es
+            t, ultrices at pellentesque et, ultricies ullamcorper neque.
+            </p>
         </div><!--w50-->
         <div class="w50 left">
             <!--Pegar imagem depois-->
-            <img src="images/faquinhal.png" alt="" width="300" height="300">
+            <img class="right"src="images/faquinhal.png" alt="" width="300" height="300">
         </div><!--w50-->
         <div class="clear"></div>
         </div><!--CENTER-->
