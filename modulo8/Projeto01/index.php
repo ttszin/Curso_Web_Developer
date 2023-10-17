@@ -168,12 +168,7 @@
         </div>
     </footer>
     <script src="js/jquery.js"></script>
-    <script>
-        $(function(){
-            alert("Já me livrei do zika virus")
-            console.log("Tamo aprendendo")
-        })
-    </script>
+    <script src="js/scripts.js"></script>
 
 </body>
 </html>

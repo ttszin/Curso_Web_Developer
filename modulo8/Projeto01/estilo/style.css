@@ -202,6 +202,7 @@ section.extras{
 
 .servicos-container,.depoimentos-container{
     padding: 0 50px;
+    color: white;
 }
 
 section.extras .title{
@@ -291,7 +292,7 @@ footer p{
         top: 55px;
         z-index: 3;
         position: absolute;
-        display: block;
+        display: none;
         left: 0;
         width: 100%;
         text-align: center;
@@ -299,6 +300,7 @@ footer p{
     }
 
     nav.mobile li{
+        font-weight: 300;
         width: 100%;
         display: block;
         background: white;
