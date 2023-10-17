@@ -83,66 +83,61 @@
     <section class="especialidades">
         <div class="center">
             <h2 class="title">Especialidades</h2>
-            <div class="w33 left box-epecialidade">
+            <div class="w33 left box-especialidade">
                 <h3><i class="fa-brands fa-css3"></i></h3>
-                <h3>CSS3</h3>
+                <h4>CSS3</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae augue velit. Sed urna massa, fringilla et est sed, dignissim semper nulla. Pellentesque habitan
                     t morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras sapien massa, pulvinar vel convallis commodo, tincidunt posuere dui. Ut at elit condimentum, 
                     consectetur dolor at, ullamcorper purus. Praesent sit amet lorem commodo, pharetra arcu at, posuere lectus. Integer dignissim mollis odio, eu laoreet erat imperdiet in. Nunc
-                    sed eleifend turpis. Pellentesque orci augue, pretium ac mi dignissim, ultrices rutrum dolor. Sed ut massa sapien. Phasellus ultricies ullamcorper ultrices. Interdum et male
-                    suada fames ac ante ipsum primis in faucibus. Aenean purus nulla, efficitur vel ipsum in, iaculis mattis risus. Quisque pharetra lorem sodales pretium iaculis. Mauris magna es
-                    t, ultrices at pellentesque et, ultricies ullamcorper neque.</p>
+                    sed eleifend turpis.</p>
             </div><!--box especialidade-->
-            <div class="w33 left box-epecialidade">
+            <div class="w33 left box-especialidade">
                 <h3><i class="fa-brands fa-html5"></i></h3>
-                <h3>HTML5</h3>
+                <h4>HTML5</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae augue velit. Sed urna massa, fringilla et est sed, dignissim semper nulla. Pellentesque habitan
                     t morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras sapien massa, pulvinar vel convallis commodo, tincidunt posuere dui. Ut at elit condimentum, 
                     consectetur dolor at, ullamcorper purus. Praesent sit amet lorem commodo, pharetra arcu at, posuere lectus. Integer dignissim mollis odio, eu laoreet erat imperdiet in. Nunc
-                    sed eleifend turpis. Pellentesque orci augue, pretium ac mi dignissim, ultrices rutrum dolor. Sed ut massa sapien. Phasellus ultricies ullamcorper ultrices. Interdum et male
-                    suada fames ac ante ipsum primis in faucibus. Aenean purus nulla, efficitur vel ipsum in, iaculis mattis risus. Quisque pharetra lorem sodales pretium iaculis. Mauris magna es
-                    t, ultrices at pellentesque et, ultricies ullamcorper neque.</p>
+                    sed eleifend turpis.</p>
             </div><!--box especialidade-->
-            <div class="w33 left box-epecialidade">
+            <div class="w33 left box-especialidade">
                 <h3><i class="fa-brands fa-node-js"></i></h3>
-                <h3>JavaScript</h3>
+                <h4>JavaScript</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae augue velit. Sed urna massa, fringilla et est sed, dignissim semper nulla. Pellentesque habitan
                     t morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras sapien massa, pulvinar vel convallis commodo, tincidunt posuere dui. Ut at elit condimentum, 
                     consectetur dolor at, ullamcorper purus. Praesent sit amet lorem commodo, pharetra arcu at, posuere lectus. Integer dignissim mollis odio, eu laoreet erat imperdiet in. Nunc
-                    sed eleifend turpis. Pellentesque orci augue, pretium ac mi dignissim, ultrices rutrum dolor. Sed ut massa sapien. Phasellus ultricies ullamcorper ultrices. Interdum et male
-                    suada fames ac ante ipsum primis in faucibus. Aenean purus nulla, efficitur vel ipsum in, iaculis mattis risus. Quisque pharetra lorem sodales pretium iaculis. Mauris magna es
-                    t, ultrices at pellentesque et, ultricies ullamcorper neque.</p>
+                    sed eleifend turpis.</p>
             </div><!--box especialidade-->
+            <div class="clear"></div>
         </div><!--Center-->
     </section>
 
     <section class="extras">
         <div class="center">
-            <div class="w50 left">
-                <h2 class="title">Depoimentos</h2>
+            <div class="w50 left depoimentos-container">
+                <h2 class="title">Depoimentos dos nossos clientes</h2>
                 <div class="depoimento-single">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae augue velit. Sed urna massa, fringilla et est sed, dignissim semper nulla. Pellentesque habitan
+                    <p class="depoimento-descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae augue velit. Sed urna massa, fringilla et est sed, dignissim semper nulla. Pellentesque habitan
                         t morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras sapien massa, pulvinar vel convallis commodo, tincidunt posuere dui. Ut at elit condimentum, 
                         consectetur dolor at, ullamcorper purus. Praesent sit amet lorem commodo, pharetra arcu at, posuere lectus. Integer dignissim mollis odio, eu laoreet erat imperdiet in. Nunc
                         sed eleifend turpis. Pellentesque orci augue, pretium ac mi dignissim, ultrices rutrum dolor.</p>
                         <p class="nome-autor">Lorem Ipsum</p>
                 </div>
                 <div class="depoimento-single">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae augue velit. Sed urna massa, fringilla et est sed, dignissim semper nulla. Pellentesque habitan
+                    <p class="depoimento-descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae augue velit. Sed urna massa, fringilla et est sed, dignissim semper nulla. Pellentesque habitan
                         t morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras sapien massa, pulvinar vel convallis commodo, tincidunt posuere dui. Ut at elit condimentum, 
                         consectetur dolor at, ullamcorper purus. Praesent sit amet lorem commodo, pharetra arcu at, posuere lectus. Integer dignissim mollis odio, eu laoreet erat imperdiet in. Nunc
                         sed eleifend turpis. Pellentesque orci augue, pretium ac mi dignissim, ultrices rutrum dolor.</p>
                         <p class="nome-autor">Lorem Ipsum</p>
                 </div>
                 <div class="depoimento-single">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae augue velit. Sed urna massa, fringilla et est sed, dignissim semper nulla. Pellentesque habitan
+                    <p class="depoimento-descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae augue velit. Sed urna massa, fringilla et est sed, dignissim semper nulla. Pellentesque habitan
                         t morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras sapien massa, pulvinar vel convallis commodo, tincidunt posuere dui. Ut at elit condimentum, 
                         consectetur dolor at, ullamcorper purus. Praesent sit amet lorem commodo, pharetra arcu at, posuere lectus. Integer dignissim mollis odio, eu laoreet erat imperdiet in. Nunc
                         sed eleifend turpis. Pellentesque orci augue, pretium ac mi dignissim, ultrices rutrum dolor.</p>
                         <p class="nome-autor">Lorem Ipsum</p>
                 </div>
             </div><!--w50-->
-            <div class="w50 left">
+            <div class="w50 left servicos-container">
                 <h2 class="title">Serviços</h2>
                 <div class="servicos">
                 <ul>
@@ -168,9 +163,17 @@
 
     <footer>
         <div class="center">
-            <p>Todos os  direitos reservadoa
+            <p>Todos os  direitos reservados
             </p>
         </div>
     </footer>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function(){
+            alert("Já me livrei do zika virus")
+            console.log("Tamo aprendendo")
+        })
+    </script>
+
 </body>
 </html>

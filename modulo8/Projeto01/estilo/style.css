@@ -9,6 +9,7 @@
 
 img{
     width: 100%;
+    max-width:  400px;
 }
 
 .center{
@@ -36,6 +37,8 @@ img{
 
 .w33{
     width: 33.3%;
+    padding: 0 10px;
+
 }
 
 /**Estilização do site**/
@@ -153,7 +156,120 @@ section.descricao-autor p{
     text-align: justify;
     font-size: 16px;
     color: #444;
-    margin-top: 20px;
+    margin-top: 40px;
+}
+
+section.especialidades{
+    padding: 40px 0;
+    background: #E2E2E2;
+}
+
+section.especialidades h2.title{
+    font-size: 20px;
+    font-weight: 400;
+    color: #999;
+    text-align: center;
+}
+
+.box-especialidade{
+    margin: 40px 0;
+    padding:  0 30px;
+    text-align: center;
+}
+
+.box-especialidade h3{
+    font-size: 40px;
+    text-align: center;
+    color: #404580;
+}
+
+.box-especialidade h4{
+    color: #BABABA;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.box-especialidade p{
+    color: #444;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+section.extras{
+    padding: 30px 0;
+    background: #404580 ;
+}
+
+.servicos-container,.depoimentos-container{
+    padding: 0 50px;
+}
+
+section.extras .title{
+    color: white;
+    font-weight: 300;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.depoimento-single{
+    padding: 15px 0;
+    border-bottom: 1px solid #5066A0;
+  
+}
+
+p.depoimento-descricao{
+    font-size: 15px;
+    color: white;
+    font-weight: 300;
+}
+
+p.nome-autor{
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.servicos ul{
+    margin: 20px 0;
+}
+
+.servicos li{
+    margin-bottom: 15px;
+}
+
+
+footer{
+    background: #313462;
+    padding: 30px 0;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-weight: 16px;
+}
+
+
+@media screen and (max-width: 768px){
+    img{
+        float: none !important;
+        display: block;
+        margin: 0 auto;
+    }
+    .w50{
+        padding: 20px;
+        width: 100%;
+    }
+    .w33{
+        width: 100%;
+        padding: 20px;
+    }
+    .box-especialidade{
+        margin: 0;
+        padding: 40px 20px;
+    }
 }
 
 @media screen and (max-width:700px){
@@ -172,26 +288,32 @@ section.descricao-autor p{
     }
 
     nav.mobile ul{
-        top: 75px;
+        top: 55px;
         z-index: 3;
         position: absolute;
         display: block;
         left: 0;
-        top: 0;
-
-    }
-}
-
-@media screen and (max-width: 768px){
-    img{
-        float: none !important;
-        display: block;
-        margin: 0 auto;
-        max-width: 500px;
-    }
-    .w50{
-        padding: 20px;
         width: 100%;
+        text-align: center;
+
     }
+
+    nav.mobile li{
+        width: 100%;
+        display: block;
+        background: white;
+        border-bottom: 1px solid #ccc;
+        font-size: 15px;
+        padding: 8px,0;
+    }
+
+    nav.mobile li a{
+        display: block;
+        color: #444;
+        text-decoration: none;
+    }
+
 }
+
+
 
