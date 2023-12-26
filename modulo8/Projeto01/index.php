@@ -62,12 +62,18 @@
     </footer>
     <script src="<?php echo INCLUDE_PATH; ?>js/jquery.js"></script>
     <script src="<?php echo INCLUDE_PATH; ?>js/scripts.js"></script>
+    <?php
+        if($url=='contato'){
+    ?>
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCkPoXzH5mTjtGOM-pDWgmWsQLgyNN9aes&callback=Function.prototype'></script>
+    <script src="<?php echo INCLUDE_PATH; ?>js/map.js"></script>
+    <?php } ?>
     <!-- <script>
         $(function(){
             alert("Já me livrei do zika virus")
             console.log("Tamo aprendendo")
         })
-    </script> -->
+    </script>  -->
 
 </body>
 </html>

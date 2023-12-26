@@ -300,6 +300,11 @@ section.erro-404 a{
     top: 50%;
 }
 
+#map{
+    width: 100%;
+    height: 400px;
+}
+
 @media screen and (max-width: 768px){
     img{
         float: none !important;
