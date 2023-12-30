@@ -39,7 +39,14 @@ $(function(){
             icone.addClass('fa-solid fa-bars');
             listaMenu.slideToggle();
         }
- 
-    })
+    });
+
+    if($('target').length > 0){
+        //O elemento existe, portanto precisamos dar o scroll em algum elemento
+        var elemento = '#'+$('target').attr('target');
+        var divScroll = $(elemento).offset().top;
+        $('html,body').animate({scrollTop:divScroll},700);
+    }
+
 
 })
