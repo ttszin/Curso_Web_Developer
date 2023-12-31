@@ -92,15 +92,27 @@ nav.desktop a{
     text-decoration: none;
 }
 
-section.banner-principal{
+section.banner-container{
     width: 100%;
     height: 600px;
-    background-image: url('../images/ney.jpg');
-    background-size:cover; 
-    background-position-x: center;
+    /* background-image: url('../images/ney.jpg');
+    background-size:cover;  */
+    /* background-position-x: center; */
     position: relative;
+    /* background-repeat: no-repeat;
+    background-position-y: center; */
+}
+
+.banner-single{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1; 
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    background-position-y: center;
 }
 
 .overlay{
@@ -109,14 +121,15 @@ section.banner-principal{
     top: 0;
     width: 100%;
     height: 100%;
+    z-index: 2;
     background-color: rgba(51,51,51,0.7);
-    z-index: 1;
+    
 }
 
-section.banner-principal form{
-    width: 98%;
+section.banner-container form{
+    width: 93%;
     max-width: 600px;
-    z-index: 2;
+    z-index: 3;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -124,14 +137,14 @@ section.banner-principal form{
     -ms-transform: translate(-50%,-50%);
 }
 
-section.banner-principal form h2{
+section.banner-container form h2{
     color: white;
     font-weight: 300;
     font-size: 30px;
     text-align: center;
 }
 
-section.banner-principal form input[type=email]{
+section.banner-container form input[type=email]{
     width: 100%;
     height: 66px;
     background:rgba(51,51,51,0.7);
@@ -141,7 +154,7 @@ section.banner-principal form input[type=email]{
     margin-top: 10px;
 }
 
-section.banner-principal form input[type=submit]{
+section.banner-container form input[type=submit]{
     width: 100%;
     height: 66px;
     background:#00C59E;
@@ -343,6 +356,28 @@ section.erro-404 a{
     height: 40px;
     color: white;
     cursor: pointer;
+}
+
+.bullets{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+.bullets span{
+    margin:0 10px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #222;
+}
+
+.bullets span.active-slider{
+    background: white;
 }
 
 
