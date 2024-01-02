@@ -13,8 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="<?php echo INCLUDE_PATH;?>estilo/fontawesome/css/all.css" rel="stylesheet"><!--Adicionando o font awesome-->
+    <link rel="icon" href="<?php echo INCLUDE_PATH; ?>faquinhal.ico" type="image/x-icon"/>
 </head>
 <body>
+    <base base="<?php echo INCLUDE_PATH; ?>"/>
     <?php
         $url = isset($_GET['url']) ? $_GET['url'] : 'home';
         switch($url) {
@@ -35,7 +37,7 @@
                 <li><a href="<?php echo INCLUDE_PATH;?>">Home</a></li>
                 <li><a href="<?php echo INCLUDE_PATH;?>depoimentos">Depoimentos</a></li>
                 <li><a href="<?php echo INCLUDE_PATH;?>servicos">Serviços</a></li>
-                <li><a href="<?php echo INCLUDE_PATH;?>contato">Contato</a></li>                         
+                <li><a realtime="contato" href="<?php echo INCLUDE_PATH;?>contato">Contato</a></li>                         
             </ul>
         </nav>
         <nav class="mobile right">
@@ -46,13 +48,14 @@
                 <li><a href="<?php echo INCLUDE_PATH;?>">Home</a></li>
                 <li><a href="<?php echo INCLUDE_PATH;?>Depoimentos">Depoimentos</a></li>
                 <li><a href="<?php echo INCLUDE_PATH;?>servicos">Serviços</a></li>
-                <li><a href="<?php echo INCLUDE_PATH;?>contato">Contato</a></li>                         
+                <li><a realtime="contato"href="<?php echo INCLUDE_PATH;?>contato">Contato</a></li>                         
             </ul>
         </nav>
         <div class="clear"></div><!--clear-->
         </div><!--Center-->
     </header>
 
+    <div class="container-principal">
     <?php
         if(file_exists('pages/'.$url.'.php')){
             include('pages/'.$url.'.php');
@@ -66,6 +69,7 @@
             }
         }
     ?>
+    </div><!--container-principal-->
 
 
     <footer <?php if(isset($pagina404) && $pagina404 == true) echo 'class="fixed "';?>>
@@ -88,6 +92,9 @@
     <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCkPoXzH5mTjtGOM-pDWgmWsQLgyNN9aes&callback=Function.prototype'></script>
     <script src="<?php echo INCLUDE_PATH; ?>js/map.js"></script>
     <?php } ?>
+
+    <script src="<?php echo INCLUDE_PATH; ?>js/animacao.js"></script>
+
     <!-- <script>
         $(function(){
             alert("Já me livrei do zika virus")

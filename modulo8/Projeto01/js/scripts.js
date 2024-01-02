@@ -48,5 +48,22 @@ $(function(){
         $('html,body').animate({scrollTop:divScroll},700);
     }
 
+    carregarDinamico();
+    function carregarDinamico(){
+        $('[realtime]').click(function(){   
+            var pagina = $(this).attr('realtime');
+            $('.container-principal').hide();
+            $('.container-principal').load(INCLUDE_PATH+'pages/'+pagina+'.php');
+            
+            setTimeout(function(){
+                initialize();
+	            addMarker(-32.034100,-52.081060,'',"Minha casa",undefined,false);
+            },1000);
+
+            $('.container-principal').fadeIn(1000);
+            return false;
+        })
+    }
+
 
 })
