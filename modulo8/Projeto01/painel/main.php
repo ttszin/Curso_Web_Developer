@@ -1,1 +1,1 @@
-estiver logado!
+<H2>Bem vindo ao painel <?php echo $_SESSION['user']?></H2>
