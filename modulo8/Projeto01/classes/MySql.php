@@ -12,7 +12,7 @@
                 }
             }
             return self::$pdo;
-        }
+        }        
     }
 
 ?>

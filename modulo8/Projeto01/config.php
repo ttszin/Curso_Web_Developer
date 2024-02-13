@@ -14,4 +14,40 @@
 	define('USER','root');
 	define('PASSWORD','');
 	define('DATABASE','projeto_01');
+
+	//funções 
+
+    function pegaCargo($cargo){
+		$arr = [
+			'0' => 'Normal',
+			'1' => 'Administrador',
+			'2' => 'Sub Administrador'
+		];
+		return $arr[$cargo];
+		
+	}
+
+	function confereCargos($cargo){
+		$conn = new mysqli(HOST, USER, PASSWORD, DATABASE);
+		
+		if ($conn->connect_error) {
+            die("Falha na conexão com o banco de dados: ");
+        }
+
+		$sql = "SELECT c.nome_cargo FROM `tb_admin.usuarios` u INNER JOIN cargos c ON u.cargo = c.idcargo WHERE u.id = $cargo";
+		
+		$result = $conn->query($sql);
+
+
+		if ($result->num_rows > 0) {
+			// Exibir o cargo do usuário
+			while($row = $result->fetch_assoc()) {
+				return  $row["nome_cargo"];
+			}
+		} else {
+			return  "Cargo não encontrado";
+		}
+		$conn->close();
+	}
+
 ?>

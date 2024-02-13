@@ -6,9 +6,11 @@
 }
 
 html,body{
+    overflow-x: hidden;
     height: 100%;
     background: rgb(225,225,225);
 }
+
 
 
 /* Página de login */
@@ -77,17 +79,9 @@ html,body{
 
 .center{max-width: 1280px;padding:0 2%;margin: 0 auto;}
 
-.menu{
-    overflow-y: auto ;
-    height: 100%;
-    background: rgb(85, 0, 0);
-    float: left;
-    width: 300px;
-}
-
-
 header{
-    float: left;
+    position: relative;
+    left: 300px;
     padding: 10px 0;
     background:#ac1f1f;
     width: calc(100% - 300px);
@@ -116,3 +110,150 @@ header{
     color: white;
 }
 
+.menu-wraper{
+    width: 300px;
+}
+.menu{
+    overflow-x: hidden;
+    overflow-y: auto ;
+    height: 100%;
+    background: rgb(85, 0, 0);
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    float: left;
+    width: 300px;
+}
+
+.box-usuario{
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.avatar-usuario{
+    text-align: left;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 3px solid #ca0f0f88;
+    display: inline-block;
+}
+
+.imagem-usuario{
+    width: 130px;
+    height: 130px;
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    border: 3px solid #ca0f0f88;
+}
+
+.imagem-usuario img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.avatar-usuario i{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    font-size: 50px;
+    color: #ccc;
+}
+
+.nome-usuario{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.nome-usuario p{
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* Conteudo principal do painel */
+
+.w100{
+    width: 100%;
+}
+
+.w50{
+    width: 48%;
+    background:red !important
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.content{
+    width: calc(100% - 300px);
+    position: relative;
+    left: 300px;
+    padding: 10px;
+}
+
+.box-content{
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px){
+    .menu{
+        display: none;
+        padding: 0;
+        width: 0;
+    }
+    .content{
+        width: 100%;
+        left: 0;
+    }
+    header{
+        left: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .menu-wraper{
+        width: 200px;
+    }
+}
+
+.items-menu{
+    margin-top: 30px;
+}
+
+.items-menu h2{
+    text-align: left;
+    font-weight: 300;
+    font-size: 18px;
+    background: #460000;
+    color: white;
+    padding: 8px;
+}
+
+.items-menu a{
+    display: block;
+    padding: 8px;
+    font-weight: 300px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid #703737;
+}
