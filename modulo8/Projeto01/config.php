@@ -17,15 +17,15 @@
 
 	//funções 
 
-    function pegaCargo($cargo){
-		$arr = [
-			'0' => 'Normal',
-			'1' => 'Administrador',
-			'2' => 'Sub Administrador'
-		];
-		return $arr[$cargo];
+    // function pegaCargo($cargo){
+	// 	$arr = [
+	// 		'0' => 'Normal',
+	// 		'1' => 'Administrador',
+	// 		'2' => 'Sub Administrador'
+	// 	];
+	// 	return $arr[$cargo];
 		
-	}
+	// }
 
 	function confereCargos($cargo){
 		$conn = new mysqli(HOST, USER, PASSWORD, DATABASE);
