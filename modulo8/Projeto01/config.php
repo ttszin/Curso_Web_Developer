@@ -1,5 +1,6 @@
 <?php
 	session_start();
+	date_default_timezone_set('America/Sao_Paulo');
 
 	$autoload = function($class){
 		include('classes/'.$class.'.php');
@@ -26,6 +27,9 @@
 	// 	return $arr[$cargo];
 		
 	// }
+
+	//Constante painel de controle
+	define('NOME_EMPRESA', 'Teteu Dev');
 
 	function confereCargos($cargo){
 		$conn = new mysqli(HOST, USER, PASSWORD, DATABASE);

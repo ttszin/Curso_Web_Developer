@@ -61,7 +61,10 @@
         <div class="menu-btn">
             <i class="fa fa-bars"></i>
         </div><!--menu-btn-->
+
         <div class="loggout">
+            <a href="<?php echo INCLUDE_PATH_PAINEL ?> "><i class="fa fa-home" aria-hidden="true"></i><span> Página Inicial</span></a>
+            
             <a href="<?php echo INCLUDE_PATH_PAINEL ?>?loggout "><span>Sair </span><i class="fa fa-sign-out" aria-hidden="true"></i></a>
         </div><!--loggout-->
     </div><!--center-->
@@ -70,46 +73,8 @@
 
 <div class="content">
 
-    <div class="box-content left w100">
-			<h2><i class="fa fa-home"></i> Painel de Controle - <?php $nomeEmpresa = "Teteu Dev"; echo $nomeEmpresa ?></h2>	
+    <?php Painel::carregarPagina(); ?>
 
-            <div class="box-metricas">
-                <div class="box-metrica-single">
-                    <div class="box-metrica-wraper">
-                        <h2>Usuários Online</h2>
-                        <p>10</p>
-                    </div><!--box-metrica-wraper-->
-                </div><!--box-metrica-single-->
-                <div class="box-metrica-single">
-                    <div class="box-metrica-wraper">
-                        <h2>Total de Visitas</h2>
-                        <p>100</p>
-                    </div><!--box-metrica-wraper-->
-                </div><!--box-metrica-single-->
-                <div class="box-metrica-single">
-                    <div class="box-metrica-wraper">
-                        <h2>Visitas Hoje</h2>
-                        <p>3</p>
-                    </div><!--box-metrica-wraper-->
-                </div><!--box-metrica-single-->
-            </div><!--box-metricas-->
-
-
-    </div><!--box-content-->
-
-    <div class="box-content left w100">
-
-    </div><!--box-content-->
-
-    <div class="box-content left w50">
-
-    </div><!--box-content-->
-
-    <div class="box-content right w50">
-
-    </div><!--box-content-->
-
-    <div class="clear"></div>
 </div><!--content-->
 
 <script src="<?php echo INCLUDE_PATH ?>js/jquery.js"></script>
