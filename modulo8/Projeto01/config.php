@@ -1,5 +1,5 @@
 <?php
-	session_start();
+	session_start();	
 	date_default_timezone_set('America/Sao_Paulo');
 
 	$autoload = function($class){
@@ -38,7 +38,7 @@
             die("Falha na conexão com o banco de dados: ");
         }
 
-		$sql = "SELECT c.nome_cargo FROM `tb_admin.usuarios` u INNER JOIN cargos c ON u.cargo = c.idcargo WHERE u.id = $cargo";
+		$sql = "SELECT c.nome_cargo FROM `tb_admin.usuarios` u INNER JOIN `tb_admin.cargos` c ON u.cargo = c.idcargo WHERE u.id = $cargo";
 		
 		$result = $conn->query($sql);
 
