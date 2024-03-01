@@ -6,9 +6,35 @@
         <?php
             if(isset($_POST['acao'])){
                 //enviei meu formulário
-                Painel::alert('sucesso','Atualizado com sucesso!');
-            }else{
-                Painel::alert('erro','Erro ao atualizar');
+                $nome = $_POST['nome'];
+                $senha = $_POST['password'];
+                $imagem = $_FILES['imagem'];
+                $imagem_atual = $_POST['imagem_atual'];
+                $usuario = new Usuario();
+                if($imagem['name'] != ''){
+                    //Existe o upload de imagem.
+                    if(Painel::imagemValida($imagem)){
+                        Painel::deleteFile($imagem_atual);
+                        $imagem = Painel::uploadFile($imagem);
+                        if($usuario->atualizarUsuario($nome,$senha,$imagem)){
+                            $_SESSION['img'] = $imagem;
+                            Painel::alert('sucesso','Atualizado com sucesso!');
+                        }else{
+                            Painel::alert('erro','Ocorreu um erro ao atualizar...');
+                        }
+                    }else{
+                        Painel::alert('erro','Ocorreu um erro, o formato da imagem não é válido...');
+                    }
+                }else{
+                    //Não existe o upload de imagem.
+                    $imagem = $imagem_atual;
+                    if($usuario->atualizarUsuario($nome,$senha,$imagem)){
+                        Painel::alert('sucesso','Atualizado com sucesso!');
+                    }else{
+                        Painel::alert('erro','Ocorreu um erro ao atualizar...');
+                    }
+                }       
+                
             }
         ?>
 
@@ -19,7 +45,7 @@
 
         <div class="form-group">
             <label>Senha:</label>
-            <input type="password" name="senha" required value ="<?php echo $_SESSION['password']?>">
+            <input type="password" name="password" required value ="<?php echo $_SESSION['password']?>">
         </div><!--form-group-->
 
         <div class="form-group">

@@ -9,6 +9,8 @@
 	spl_autoload_register($autoload);
 	define('INCLUDE_PATH','http://localhost/Curso/Curso_Web_Developer/modulo8/Projeto01/');
 	define('INCLUDE_PATH_PAINEL',INCLUDE_PATH.'painel/');
+	
+	define('BASE_DIR_PAINEL',__DIR__.'/painel');
 
 	//Conectar com banco de dados
 	define('HOST','localhost');
