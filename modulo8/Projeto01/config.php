@@ -32,7 +32,8 @@
 
 	//Constante painel de controle
 	define('NOME_EMPRESA', 'Teteu Dev');
-
+	
+	//Funções do painel
 	function confereCargos($cargo){
 		$conn = new mysqli(HOST, USER, PASSWORD, DATABASE);
 		
@@ -55,5 +56,30 @@
 		}
 		$conn->close();
 	}
+
+	function selecionadoMenu($par){
+		$url = explode('/',@$_GET['url'])[0];
+		if($url == $par){
+			echo 'class="menu-active"';
+		}
+	}
+
+	function verificaPermissaoMenu($permissao){
+		if($_SESSION['cargo'] >= $permissao){
+			return;
+		}else{
+			echo 'style="display:none;"';
+		}
+	}
+
+	function verificaPermissaoPagina($permissao){
+		if($_SESSION['cargo'] >= $permissao){
+			return;
+		}else{
+			include('painel/pages/permissao-negada.php');
+			die();
+		}
+	}
+	
 
 ?>
