@@ -405,15 +405,31 @@ header{
     color: white;
 }
 
+/* Menu selecionado */
+
 .menu-active{
     background: rgb(112, 29, 26);
 }
 
 .menu-active::before{
-    /* Adicionar seta para quando tiver selecionado */
+    /* 
+    Adicionar seta para quando tiver selecionado 
+    */
     /* content: '> '; */
 }
 
+
+.form-group-login label{
+    font-size: 13px;
+    font-weight: 300;
+    color: black;
+    padding-right: 10px;
+}
+
+form .form-group-login:nth-of-type(2){
+    position: relative;
+    top: 10px;
+}
 
 
 
