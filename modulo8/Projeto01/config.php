@@ -36,12 +36,12 @@
 	//Funções do painel
 	function confereCargos($cargo){
 		$conn = new mysqli(HOST, USER, PASSWORD, DATABASE);
-		
+
 		if ($conn->connect_error) {
             die("Falha na conexão com o banco de dados: ");
         }
 
-		$sql = "SELECT c.nome_cargo FROM `tb_admin.usuarios` u INNER JOIN `tb_admin.cargos` c ON u.cargo = c.idcargo WHERE u.id = $cargo";
+		$sql = "SELECT c.nome_cargo FROM `tb_admin.usuarios` u INNER JOIN `tb_admin.cargos` c ON u.cargo = c.idcargo WHERE c.idcargo = $cargo";
 		
 		$result = $conn->query($sql);
 

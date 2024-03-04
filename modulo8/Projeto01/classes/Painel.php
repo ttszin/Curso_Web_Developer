@@ -68,8 +68,12 @@
         }
 
         public static function uploadFile($file){
-            if(move_uploaded_file($file['tmp_name'],BASE_DIR_PAINEL.'/uploads/'.$file['name'])){
-                return $file['name'];
+            //Para garantir que as imagens com o mesmo nome não serão sobrescritas, utilizamos a função uniqid do php, que gera um id único para cada chamada da função
+            $formatoArquivo = explode('.',$file['name']);
+            //Cria uma imagem com um id único
+            $imagemNome = uniqid().'.'.$formatoArquivo[count($formatoArquivo) - 1];
+            if(move_uploaded_file($file['tmp_name'],BASE_DIR_PAINEL.'/uploads/'.$imagemNome)){
+                return $imagemNome;
             }else{
                 return false;
             }

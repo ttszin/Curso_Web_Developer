@@ -63,7 +63,9 @@
         </div><!--menu-btn-->
 
         <div class="loggout">
-            <a href="<?php echo INCLUDE_PATH_PAINEL ?> "><i class="fa fa-home" aria-hidden="true"></i><span> Página Inicial</span></a>
+            <!-- Colocand um @ o array vazio não aparece para o usuário -->
+            <a <?php if(@$_GET['url'] == ''){ ?> style="background: #8a0a01;padding: 15px;" <?php } ?> href="<?php echo INCLUDE_PATH_PAINEL ?>"> 
+            <i class="fa fa-home" aria-hidden="true"></i><span> Página Inicial</span></a>
             
             <a href="<?php echo INCLUDE_PATH_PAINEL ?>?loggout "><span>Sair </span><i class="fa fa-sign-out" aria-hidden="true"></i></a>
         </div><!--loggout-->

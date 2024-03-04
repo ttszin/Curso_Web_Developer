@@ -191,8 +191,7 @@ header{
 }
 
 .w50{
-    width: 48%;
-    background:red !important
+    width: 49%;
 }
 
 .left{
@@ -411,7 +410,8 @@ header{
 }
 
 .menu-active::before{
-    content: '> ';
+    /* Adicionar seta para quando tiver selecionado */
+    /* content: '> '; */
 }
 
 
@@ -444,6 +444,9 @@ header{
 }
 
 @media screen and (max-width: 500px){
+    .w50{
+        width: 100%;
+    }
     .box-metrica-single{
         width: 100%;
         padding-top: 40%;

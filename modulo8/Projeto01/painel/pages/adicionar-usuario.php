@@ -29,18 +29,19 @@
                 }else{
                     //Podemos cadastrar
                     //Caso alguém mexa no front tem outra varificação novamente
-                    if($cargo >= $_SESSION['cargo']){
+                    if($cargo > $_SESSION['cargo']){
                         Painel::alert('erro','Você precisa selecionar um cargo menor do que o seu!');
                     }else if (Painel::imagemValida($imagem) == false){
                         Painel::alert('erro','O formato especificado não está correto!');
-                    }else if(Painel::userExists($login)){
+                    }else if(Usuario::userExists($login)){
                         Painel::alert('erro','O login já existe, selecione outro por favor!');
                     }
                     else{
                         //Apenas cadastrar no banco de dados!
                         $usuario = new Usuario();
-
-                        Painel::alert('sucesso','O cadastro do usuário!'.$login.'foi feito com sucesso!');
+                        $imagem = Painel::uploadFile($imagem);
+                        $usuario->cadastrarUsuario($login,$senha,$imagem,$nome,$cargo);
+                        Painel::alert('sucesso','O cadastro do usuário '.$login.' foi feito com sucesso!');
                     }
                 }        
             }
@@ -66,7 +67,7 @@
             <select name="cargo">
                 <?php
                     foreach(Painel::$cargos as $key => $value){
-                        if($key < $_SESSION['cargo']) echo '<option value="'.$key.'">'.$value.'</option>';
+                        if($key <= $_SESSION['cargo']) echo '<option value="'.$key.'">'.$value.'</option>';
                     }
                 ?>
             </select>
