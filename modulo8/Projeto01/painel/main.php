@@ -40,7 +40,7 @@
         </div><!--box-usuario-->
         <div class="items-menu">
             <h2>Cadastro</h2>
-            <a <?php selecionadoMenu('cadastrar-depoimento');?> href="<?php echo INCLUDE_PATH_PAINEL ?>">Cadastrar Depoimento</a>
+            <a <?php selecionadoMenu('cadastrar-depoimento');?> href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-depoimento">Cadastrar Depoimento</a>
             <a <?php selecionadoMenu('cadastrar-servico');?> href="">Cadastrar Serviço</a>
             <a <?php selecionadoMenu('cadastrar-slides');?> href="">Cadastrar Slides</a>
             <h2>Gestão</h2>
