@@ -33,4 +33,6 @@ $(function(){
             });
         }
     })
+
+    $('[formato=data]').mask('99/99/9999');   // Define o formato da data como um padrão de máscara
 })
