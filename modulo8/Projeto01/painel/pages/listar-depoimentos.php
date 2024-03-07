@@ -1,7 +1,7 @@
 <?php
     $paginaAtual = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1;
     $porPagina = 2;
-    echo $paginaAtual;
+    // echo $paginaAtual;
     $depoimentos = Painel::selectAll('tb_site.depoimentos',($paginaAtual - 1) * $porPagina,$porPagina);
 ?>
 
