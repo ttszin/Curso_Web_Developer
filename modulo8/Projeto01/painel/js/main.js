@@ -40,8 +40,8 @@ $(function(){
             $('.menu').css('width','0').css('padding','0');
             $('.content,header').css('width','100%').css('left','0');
             open = false;
-            targetSizeMenu = (windowSize <= 400) ? 200:250;
         }
+        targetSizeMenu = (windowSize <= 400) ? 200:250;
     })
 
     $('[formato=data]').mask('99/99/9999');   // Define o formato da data como um padrão de máscara
