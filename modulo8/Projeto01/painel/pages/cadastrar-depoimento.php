@@ -25,12 +25,12 @@
         
         <div class="form-group">
             <label>Data:</label>
-            <input formato="data" type="text" name=data>        
+            <input formato="data" type="text" name="data">        
         </div><!--form-group-->
 
         <div class="form-group">
             <input type="hidden" name="nome_tabela" value="tb_site.depoimentos" />
-            <input type="submit" name="acao" value="Atualizar!">
+            <input type="submit" name="acao" value="Cadastrar!">
         </div><!--form-group-->
 
 
