@@ -1,4 +1,12 @@
 <?php
+    if(isset($_GET['excluir'])){
+        // Para fazer um cast basta colocar entre parenteses antes da variavel EX: (int)$variavel
+        // Abaixo não é um cast
+    
+        $idExcluir = intval($_GET['excluir']);
+        Painel::deletar('tb_site.depoimentos',$idExcluir);
+        Painel::redirect(INCLUDE_PATH_PAINEL.'listar-depoimentos');
+    }
     $paginaAtual = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1;
     $porPagina = 2;
     // echo $paginaAtual;
@@ -22,7 +30,7 @@
             <td><?php echo $value['nome']?></td>
             <td><?php echo $value['data']?></td>
             <td><a class="btn edit"href=""><i class="fa fa-pencil"></i> Editar</a></td>
-            <td><a class="btn delete" href=""><i class="fa fa-times"></i> Excluir</a></td>
+            <td><a actionBtn="delete" class="btn delete" href="<?php INCLUDE_PATH_PAINEL ?>listar-depoimentos?excluir=<?php echo $value['id'] ?>"><i class="fa fa-times"></i> Excluir</a></td>
         </tr>
 
         <?php } ?>

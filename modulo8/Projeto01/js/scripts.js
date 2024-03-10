@@ -61,6 +61,9 @@ $(function(){
             },1000);
 
             $('.container-principal').fadeIn(1000);
+            console.log('opa')
+            window.history.pushState('','',pagina);
+            
             return false;
         })
     }
